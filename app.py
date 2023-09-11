@@ -5,7 +5,7 @@ from gtts import gTTS
 from decouple import config
 
 # Set OpenAI API key
-openai.api_key = config('OPENAI_API_KEY')
+openai.api_key = config('openai.api_key')
 
 def transcribe_from_microphone():
     recognizer = sr.Recognizer()
